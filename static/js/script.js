@@ -1,5 +1,9 @@
+var count = 0;
+
 function changeContent() {
-  document.getElementById("content").innerHTML = "Conteúdo alterado!";
+  count++;
+  document.getElementById("content").innerHTML =
+    "Conteúdo alterado " + (count > 1 ? count : "") + " vezes!";
 }
 
 function validateForm() {
