@@ -46,7 +46,7 @@ def edit_note(index):
     return render_template('edit.html', note=note, index=index)
 
 @app.route('/delete/<int:index>', methods=['POST'])
-def delete_note():
+def delete_note(index):
     notes = load_notes()
     del notes[index]
     save_notes(notes)
