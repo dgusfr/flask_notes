@@ -4,24 +4,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulário de Exemplo</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
-  <script src="{{ url_for('static', filename='js/script.js') }}" defer></script>
+  <title>Note Taking App</title>
 </head>
 
 <body>
-  <h1>Bem-vindo ao meu site!</h1>
-  <p>Este é um site simples criado com Flask.</p>
-  <br>
-  <h1>Manipulação de DOM</h1>
-  <div id="content">Conteúdo original</div>
-  <button type="button" onclick="changeContent()">Alterar Conteúdo</button>
-  <br>
-  <h1>Validação de Formulário</h1>
-  <form name="myForm" id="myForm" onsubmit="return validateForm()" method="post" action="/submit">
-    Nome: <input type="text" name="fname" id="fname">
-    <input type="submit" value="Enviar">
+  <h1>Notes</h1>
+  <form action="{{ url_for('add_note') }}" method="post">
+    <input type="text" name="title" placeholder="Title" required>
+    <textarea name="content" placeholder="Content" required></textarea>
+    <button type="submit">Add Note</button>
   </form>
+  <ul>
+    {% for note in notes %}
+    <li>
+      <h2>{{ note.title }}</h2>
+      <p>{{ note.content }}</p>
+      <form action="{{ url_for('delete_note', id=note.id) }}" method="post">
+        <button type="submit">Delete</button>
+      </form>
+      <a href="{{ url_for('edit_note', id=note.id) }}">Edit</a>
+    </li>
+    {% endfor %}
+  </ul>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>
 
 </html>
