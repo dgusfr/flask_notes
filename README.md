@@ -5,7 +5,7 @@ Um aplicativo simples para criar, editar e excluir notas, utilizando Flask e arm
 ## Interface
 
 <div align="center">
-  <img src="img/logo.png" alt="Imagem do Projeto" width="100">
+  <img src="img/logo.png" alt="Imagem do Projeto" width="900">
 </div>
 
 ## Sumário
@@ -32,7 +32,7 @@ Um aplicativo simples para criar, editar e excluir notas, utilizando Flask e arm
 
 ## Status
 
-![Concluído](http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge
+![Concluído](http://img.shields.io/static/v1?label=STATUS&message=CONCLUIDO&color=GREEN&style=for-the-badge)
 
 ## Descrição
 
@@ -53,11 +53,11 @@ O projeto utiliza Flask para criar um servidor web simples que gerencia notas. A
 
 1. Clone o repositório:
    ```sh
-   git clone https://github.com/seu_usuario/notetaking_app.git
+   git clone https://github.com/dgusfr/webPythonFlask.git
    ```
 2. Navegue até o diretório do projeto:
    ```sh
-   cd notetaking_app
+   cd webpythonflask
    ```
 3. Crie um ambiente virtual e ative-o:
    ```sh
