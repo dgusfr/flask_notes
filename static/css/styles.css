@@ -1,8 +1,35 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #d4d2d2;
+  margin: 20px;
 }
 
 h1 {
-  color: #161616;
+  text-align: center;
+}
+
+form {
+  margin-bottom: 20px;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+button {
+  padding: 10px 20px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
 }
