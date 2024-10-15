@@ -47,7 +47,9 @@ Este projeto é um aplicativo de notas que permite criar, editar e excluir notas
 
 ## Explicação
 
-O projeto utiliza Flask para criar um servidor web simples que gerencia notas. As notas são carregadas de um arquivo JSON e salvas novamente sempre que uma nota é adicionada, editada ou excluída.
+O projeto utiliza Flask para criar um servidor web simples que gerencia notas. 
+
+As notas são carregadas de um arquivo JSON e salvas novamente sempre que uma nota é adicionada, editada ou excluída.
 
 ## Como Usar
 
